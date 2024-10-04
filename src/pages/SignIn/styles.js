@@ -91,6 +91,7 @@ export const Form = styled.form`
         padding: 64px;
         height: 541px;
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+        border-radius:16px;
 
          > h1 {
             display: block;

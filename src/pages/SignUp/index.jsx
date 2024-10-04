@@ -1,4 +1,4 @@
-import { Container,Form,Content } from './styles';
+import { Container,Form,Div } from './styles';
 import polygonImage from '../../assets/Polygon 1.png';
 
 import {Link} from 'react-router-dom'
@@ -10,12 +10,12 @@ export function SignUp(){
     return(
         <Container>
 
-            <Content>
+            <Div>
                 <div className="content">
                     <img src={polygonImage} alt="imagem de um polígono" />
                     <p>food explorer</p>
                 </div>
-            </Content>
+            </Div>
 
 
             <Form>

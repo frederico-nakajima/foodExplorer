@@ -93,9 +93,9 @@ export const Form = styled.form`
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
         border-radius:16px;
 
-         > h1 {
+        > h1 {
             display: block;
             
-    }
+        }
     }
 `;

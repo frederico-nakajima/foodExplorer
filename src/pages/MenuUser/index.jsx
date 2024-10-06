@@ -1,6 +1,6 @@
 import { Container,Banner,Content } from './styles';
 import { HeaderIcon } from '../../components/HeaderIcon';
-import { Footer } from '../../components/Footer';
+import { Footer } from '../../components/BrandFooter';
 import Pngegg from '../../assets/pngegg.png';
 import { Card } from '../../components/Card';
 

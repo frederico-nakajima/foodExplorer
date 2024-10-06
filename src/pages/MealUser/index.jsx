@@ -5,7 +5,7 @@ import Dish from '../../assets/Dish.png';
 import Plus from '../../assets/Plus.svg';
 import Minus from '../../assets/Minus.svg';
 import { Button } from '../../components/Button';
-import { Footer } from '../../components/Footer';
+import { Footer } from '../../components/BrandFooter';
 import { Link } from 'react-router-dom';
 
 import CaretLeft from '../../assets/CaretLeft.svg';

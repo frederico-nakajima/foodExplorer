@@ -1,5 +1,5 @@
 import { Container,Form,Div } from './styles';
-import polygonImage from '../../assets/Polygon 1.png';
+import polygonImage from '../../assets/Polygon.png';
 
 import {Link} from 'react-router-dom'
 import { Input } from '../../components/Input'

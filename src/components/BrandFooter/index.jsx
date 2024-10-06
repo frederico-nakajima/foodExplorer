@@ -1,5 +1,5 @@
 import { Container,Brand } from './styles';
-import polygonImageFooter from '../../assets/Polygon 1-footer.svg';
+import Polygon from '../../assets/Polygon.png';
 
 
 
@@ -10,7 +10,7 @@ export function Footer(){
            
            <main>
                <Brand>
-                    <img src={polygonImageFooter} alt="imagem de um polígono" />
+                    <img src={Polygon} alt="imagem de um polígono" />
                     <div>
                         <h2>food explorer</h2>
                     </div>

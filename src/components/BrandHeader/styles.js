@@ -9,7 +9,7 @@ export const Container = styled.div`
     gap:10px;
     width: 364px;
     heigth:114px;
-    padding:30px 10px 10px 10px;
+    padding:30px 10px 15px 10px;
     border:1px solid ${({theme}) => theme.COLORS.WHITE};
     background-color:${({theme}) => theme.COLORS.BACKGROUND_700};
     margin-left:-70px;

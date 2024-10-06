@@ -1,4 +1,4 @@
-import { Container,Form,TopLink } from './styles';
+import { Container,Form,CaretLeftLink } from './styles';
 import { Header } from '../../components/Header';
 import { Textarea } from '../../components/Textarea'
 import { Input } from '../../components/Input'
@@ -7,6 +7,7 @@ import { Section } from '../../components/Section'
 import UploadSimple from '../../assets/UploadSimple.svg';
 import {Link} from 'react-router-dom'
 import { BrandHeader } from '../../components/BrandHeader'
+
 import CaretLeft from '../../assets/CaretLeft.svg';
 
 export function AddDish(){
@@ -15,12 +16,12 @@ export function AddDish(){
             <Header/>
             <BrandHeader/>
 
-            <TopLink>
+            <CaretLeftLink>
                     <img src={CaretLeft} alt="imagem de uma seta apontando para esquerda" />
                     <Link to="/">
                         Voltar
                     </Link>
-            </TopLink>
+            </CaretLeftLink>
                         
 
             <main>
@@ -29,7 +30,8 @@ export function AddDish(){
                 <Form>
                     
                     <header>
-                        <h1>Adicionar prato</h1>
+                        <h1 className='adicionarPrato'>Adicionar prato</h1>
+                        <h1 className='novoPrato'>Novo prato</h1>
                     </header>
                         
                     <div className="imagem-salada-categoria">
@@ -92,6 +94,7 @@ export function AddDish(){
                 </Form>
             </main>
 
+          
            
         </Container>
     )

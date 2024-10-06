@@ -14,30 +14,30 @@ export const Container = styled.div`
                 }
 
              
-                >Footer{
-                    height: 77px;
-                    margin-top:150px;
-                    margin-left:-55px;
-                    width: 364px;
-                        >main{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 50px;
-                            width: 364px;
-                                >p{
-                                    font-size:12px;
-                                }
+                // >Footer{
+                //     height: 77px;
+                //     margin-top:150px;
+                //     margin-left:-55px;
+                //     width: 364px;
+                //         >main{
+                //             display: flex;
+                //             justify-content: center;
+                //             align-items: center;
+                //             gap: 50px;
+                //             width: 364px;
+                //                 >p{
+                //                     font-size:12px;
+                //                 }
 
-                                >Brand{
-                                    h2{
-                                        font-size:12px;
-                                    }
+                //                 >Brand{
+                //                     h2{
+                //                         font-size:12px;
+                //                     }
                                     
-                                }
-                        }        
+                //                 }
+                //         }        
                                 
-                }       
+                // }       
 
               
                                     
@@ -167,7 +167,7 @@ export const Container = styled.div`
             display: flex;
             flex-direction: column;
             justify-content: center;
-            
+            margin-bottom:15px;
             
             
 
@@ -177,7 +177,7 @@ export const Container = styled.div`
                
                 align-items: flex-start;
                >label{
-                margin-bottom:5px;
+                margin-bottom:10px;
                 margin-top:-10px;
                }
             }
@@ -232,10 +232,10 @@ export const Container = styled.div`
             display: flex;
             align-items: center;
             height: 51px;
-            gap: 24px;
-            width: 364px;
+            gap: 15px;
+            width: 265px;
             background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
-            padding: 0px 0px 0px 16px;
+            padding: 0px 0px 0px 0px;
             border-radius: 8px;
            
             margin-bottom:20px;
@@ -260,16 +260,20 @@ export const Container = styled.div`
            
             
 
-export const TopLink = styled.div`
+export const CaretLeftLink = styled.a`
     position:relative;
     margin:0px auto 120px auto ;
     display: flex;
     
-    gap:5px;
+    gap:2px;
     width: 450px;
    
    
-
+    >img{
+        width:20px;
+        height:20px;
+        margin-bottom:40px;
+    }
     >a{
         position:absolute;
         top:0px;
@@ -279,7 +283,7 @@ export const TopLink = styled.div`
         align-items: center;
         color: ${({ theme }) => theme.COLORS.WHITE};
         font-family:"Poppins",serif;
-        font-size: 20px;
+        font-size: 16.5px;
         font-style: normal;
         font-weight: 700;
         line-height: 140%; /* 33.6px */
@@ -306,12 +310,23 @@ export const Form = styled.form`
         align-items: center;
         justify-content: space-between;
 
-        h1{
+        h1.adicionarPrato{
+            display:none;
             font-family: Poppins;
             font-size: 32px;
             font-style: normal;
             font-weight: 500;
-            line-height: 140%; /* 44.8px */ 
+            line-height: 140%; 
+            
+        }
+         h1.novoPrato{
+            display:block;
+            font-family: Poppins;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; 
+            margin-bottom:24px;
             
         }
    

@@ -4,7 +4,7 @@ import Polygon from '../../assets/Polygon.png';
 
 
 
-export function Footer(){
+export function BrandFooter(){
     return(
         <Container>
            

@@ -4,10 +4,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-
     align-items: center;
     padding-bottom:500px;
     width: 100%;
+
                 >Header{
                     display:none;
                         
@@ -46,12 +46,9 @@ export const Container = styled.div`
         >main{
             display: flex;
             flex-direction: column;
-    
-    
-    
             width:428px;
-       
-        
+    
+    
             .imagem-salada-categoria{
                     
                 width: 364px;
@@ -60,13 +57,11 @@ export const Container = styled.div`
                 flex-direction: column;
                 
                 
-            
-        
                 .UploadSimple{
-                    
                     display:flex;
                     flex-direction:column;
                     width:270px;
+                    
                 
                     
                         >div{
@@ -98,6 +93,11 @@ export const Container = styled.div`
                 }
                         
             }
+            
+        
+    
+       
+        
                     
                     
         .inputs{
@@ -110,14 +110,10 @@ export const Container = styled.div`
             
             gap: 32px;
             
-            
-            
             .nome{
                width: 364px;
                 
             }
-            
-            
             
             .dados{
                 display: flex;
@@ -128,6 +124,10 @@ export const Container = styled.div`
                     
                 margin-top:-8px;
             }
+            
+            
+            
+            
                     
         }
                     
@@ -160,16 +160,13 @@ export const Container = styled.div`
         }
 
         .section{
-          
             width: 364px;
-            
             display: flex;
             flex-direction: column;
             justify-content: center;
             margin-bottom:15px;
+          
             
-            
-
             .preco{
                 display: flex;
                 flex-direction:column;
@@ -180,6 +177,9 @@ export const Container = styled.div`
                 margin-top:-10px;
                }
             }
+            
+            
+
         }
 
       
@@ -245,12 +245,12 @@ export const Container = styled.div`
         }
     }
 
-    
+`;    
             
 
     
 
-`;
+
 
 
            

@@ -40,8 +40,8 @@ export function AddDish(){
                         <div className='UploadSimple'>
                             <label htmlFor="UploadSimple">Imagem do prato</label>
                             <div>
-                                <img src={UploadSimple} alt="ícone de busca" />
-                                <input placeholder="Selecione imagem"  id="UploadSimple"/>
+                                <img src={UploadSimple} alt="ícone de upload" />
+                                <input  placeholder="Selecione imagem"  id="UploadSimple"/>
                             </div>
                         </div>
     
@@ -84,7 +84,7 @@ export function AddDish(){
 
                 
 
-                    <div className="decricao">
+                    <div className="descricao">
                         <label htmlFor="descricao">Descrição</label>
                         <Textarea placeholder="Fale brevemente sobre o prato, seus ingredientes e composição" id="descricao"/>
                     </div>

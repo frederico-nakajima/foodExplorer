@@ -7,7 +7,6 @@ import { Section } from '../../components/Section'
 import UploadSimple from '../../assets/UploadSimple.svg';
 import {Link} from 'react-router-dom'
 import { BrandHeader } from '../../components/BrandHeader'
-
 import CaretLeft from '../../assets/CaretLeft.svg';
 
 export function AddDish(){
@@ -93,8 +92,7 @@ export function AddDish(){
                     </div>
                 </Form>
             </main>
-
-          
+        
            
         </Container>
     )

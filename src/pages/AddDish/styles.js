@@ -14,30 +14,30 @@ export const Container = styled.div`
                 }
 
              
-                // >Footer{
-                //     height: 77px;
-                //     margin-top:150px;
-                //     margin-left:-55px;
-                //     width: 364px;
-                //         >main{
-                //             display: flex;
-                //             justify-content: center;
-                //             align-items: center;
-                //             gap: 50px;
-                //             width: 364px;
-                //                 >p{
-                //                     font-size:12px;
-                //                 }
+                >Footer{
+                    height: 77px;
+                    margin-top:150px;
+                    margin-left:-55px;
+                    width: 364px;
+                        >main{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 50px;
+                            width: 364px;
+                                >p{
+                                    font-size:12px;
+                                }
 
-                //                 >Brand{
-                //                     h2{
-                //                         font-size:12px;
-                //                     }
+                                >Brand{
+                                    h2{
+                                        font-size:12px;
+                                    }
                                     
-                //                 }
-                //         }        
+                                }
+                        }        
                                 
-                // }       
+                }       
 
               
                                     

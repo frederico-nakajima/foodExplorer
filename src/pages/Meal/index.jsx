@@ -4,7 +4,7 @@ import { Tag } from '../../components/Tag'
 import Dish from '../../assets/Dish.png'
 
 import { Button } from '../../components/Button'
-import { Footer } from '../../components/BrandFooter';
+import { Footer } from '../../components/Footer';
 import {Link} from 'react-router-dom'
 
 import CaretLeft from '../../assets/CaretLeft.svg';

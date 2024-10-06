@@ -6,7 +6,7 @@ import { NoteItem } from '../../components/NoteItem'
 import { Section } from '../../components/Section'
 import UploadSimple from '../../assets/UploadSimple.svg';
 import {Link} from 'react-router-dom'
-import { Footer } from '../../components/BrandFooter';
+import { Footer } from '../../components/Footer';
 import CaretLeft from '../../assets/CaretLeft.svg';
 
 export function EditDish(){

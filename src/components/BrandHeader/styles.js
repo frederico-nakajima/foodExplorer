@@ -7,7 +7,7 @@ export const Container = styled.div`
     justify-content:center;
     align-items:center;
     gap:10px;
-    width: 364px;
+   width:428px;
     heigth:114px;
     padding:30px 10px 15px 10px;
     border:1px solid ${({theme}) => theme.COLORS.WHITE};
@@ -16,7 +16,7 @@ export const Container = styled.div`
     margin-bottom:10px;
 
      >.list{
-        margin-right:40px;
+        margin-right:80px;
         margin-left:-40px;
      }
 

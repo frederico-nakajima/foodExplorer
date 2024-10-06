@@ -6,7 +6,7 @@ export const Container = styled.div`
     flex-direction: column;
 
     align-items: center;
-
+    padding-bottom:500px;
     width: 100%;
                 >Header{
                     display:none;
@@ -15,26 +15,25 @@ export const Container = styled.div`
 
              
                 >Footer{
+                    border:1px solid ${({theme}) => theme.COLORS.WHITE};
                     height: 77px;
                     margin-top:150px;
                     margin-left:-55px;
-                    width: 364px;
+                    width:428px;
                         >main{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 50px;
+                           
+                            
+                        
+                            gap: 0px;
                             width: 364px;
                                 >p{
-                                    font-size:12px;
+                                    font-size:10px;
                                 }
+                                h2{
+                                    font-size:15px;
+                                }    
 
-                                >Brand{
-                                    h2{
-                                        font-size:12px;
-                                    }
-                                    
-                                }
+                              
                         }        
                                 
                 }       

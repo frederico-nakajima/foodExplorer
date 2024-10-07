@@ -72,3 +72,28 @@ export const Brand = styled.div`
       
   }
 `;
+
+
+// >Footer{
+//   border:1px solid ${({theme}) => theme.COLORS.WHITE};
+//   height: 77px;
+//   margin-top:150px;
+//   margin-left:-55px;
+//   width:428px;
+//       >main{
+         
+          
+      
+//           gap: 0px;
+//           width: 364px;
+//               >p{
+//                   font-size:10px;
+//               }
+//               h2{
+//                   font-size:15px;
+//               }    
+
+            
+//       }        
+              
+// }   

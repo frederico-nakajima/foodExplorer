@@ -4,39 +4,14 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     padding-bottom:500px;
-    width: 100%;
-
-                >Header{
-                    display:none;
-                        
-                }
+    width:428px;
+    margin:0 auto;
+              
 
              
-                >Footer{
-                    border:1px solid ${({theme}) => theme.COLORS.WHITE};
-                    height: 77px;
-                    margin-top:150px;
-                    margin-left:-55px;
-                    width:428px;
-                        >main{
-                           
-                            
-                        
-                            gap: 0px;
-                            width: 364px;
-                                >p{
-                                    font-size:10px;
-                                }
-                                h2{
-                                    font-size:15px;
-                                }    
-
-                              
-                        }        
-                                
-                }       
+                  
 
               
                                     
@@ -47,7 +22,7 @@ export const Container = styled.div`
             display: flex;
             flex-direction: column;
             width:428px;
-    
+             align-items:center;
     
             .imagem-salada-categoria{
                     
@@ -265,7 +240,7 @@ export const CaretLeftLink = styled.a`
     display: flex;
     
     gap:2px;
-    width: 450px;
+    width: 364px;
    
    
     >img{

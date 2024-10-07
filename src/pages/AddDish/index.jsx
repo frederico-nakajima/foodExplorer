@@ -14,8 +14,7 @@ import CaretLeft from '../../assets/CaretLeft.svg';
 export function AddDish(){
     return(
         <Container>
-            <Header/>
-            <BrandHeader/>
+           
 
             <CaretLeftLink>
                     <img src={CaretLeft} alt="imagem de uma seta apontando para esquerda" />
@@ -95,7 +94,7 @@ export function AddDish(){
                 </Form>
             </main>
             
-            <Footer/>
+         
            
         </Container>
     )

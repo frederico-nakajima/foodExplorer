@@ -16,14 +16,17 @@ export function Footer(){
                     </div>
                 </Brand>
                         
-
-                
-               
-                
-               
                 <p>© 2023 - Todos os direitos reservados.</p>
-                    
            </main>
+
+        </Container>
+    )
+}
+                    
+                
+               
+                
+               
                
                   
                 
@@ -31,6 +34,3 @@ export function Footer(){
 
            
                 
-        </Container>
-    )
-}

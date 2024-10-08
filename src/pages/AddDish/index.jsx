@@ -1,4 +1,4 @@
-import { Container,Form,CaretLeftLink } from './styles';
+import { Container,Form } from './styles';
 import { Header } from '../../components/Header';
 import { BrandHeader } from '../../components/BrandHeader'
 import { Textarea } from '../../components/Textarea'
@@ -16,17 +16,13 @@ export function AddDish(){
         <Container>
            
 
-            <CaretLeftLink>
-                    <img src={CaretLeft} alt="imagem de uma seta apontando para esquerda" />
-                    <Link to="/">
-                        Voltar
-                    </Link>
-            </CaretLeftLink>
+            <Link to="/">
+                <img src={CaretLeft} alt="imagem de uma seta apontando para esquerda" />
+                Voltar
+            </Link>
                         
-
+            
             <main>
-
-              
                 <Form>
                     
                     <header>
@@ -34,8 +30,8 @@ export function AddDish(){
                         <h1 className='novoPrato'>Novo prato</h1>
                     </header>
                         
-                    <div className="imagem-salada-categoria">
     
+                    <div className="imagem-salada-categoria">
                         <div className='UploadSimple'>
                             <label htmlFor="UploadSimple">Imagem do prato</label>
                             <div>
@@ -45,13 +41,10 @@ export function AddDish(){
                         </div>
     
                         <div className="inputs">
-    
-    
                             <div className='nome'>
                                 <label htmlFor="nome">Nome</label>
                                 <Input placeholder="Ex.: Salada Ceasar" id="nome"/>
                             </div>
-    
                             <div className="dados">
                                 <label htmlFor="categoria">Categoria</label>
                                 <select id="categoria">
@@ -60,45 +53,55 @@ export function AddDish(){
                                 <option value="mentorship">Bebida</option>
                                 </select>
                             </div>
-    
                         </div>
                     </div>
-
-
+    
                     <div className="section">
-    
-                        <Section title="Ingredientes">
-                            <div className='tags'>
-                                <NoteItem  placeholder="Pão Naan"/>
-                                <NoteItem isnew placeholder="Adicionar"/>
-                            </div>
-                        </Section>
-    
-    
+                        <div className="ingredientes-preco">
+                            <label htmlFor="preco">Ingredientes</label>
+                            <Section>
+                                <div className='tags'>
+                                    <NoteItem  placeholder="Pão Naan"/>
+                                    <NoteItem isnew placeholder="Adicionar"/>
+                                </div>
+                            </Section>
+                        </div>
                         <div className='preco'>
                             <label htmlFor="preco">Preço</label>
                             <Input placeholder="R$ 00,00" id="preco"/>
                         </div>
                     </div>
-
-                
-
+    
                     <div className="descricao">
                         <label htmlFor="descricao">Descrição</label>
                         <Textarea placeholder="Fale brevemente sobre o prato, seus ingredientes e composição" id="descricao"/>
                     </div>
-                        
+
                     <div className="buttons">
                         <button>Salvar alterações</button>
                     </div>
+
                 </Form>
             </main>
-            
+                        
             <Footer/>
            
         </Container>
     )
 }
+    
+    
+    
+
+
+              
+    
+    
+
+                
+
+                        
+            
 
 
 

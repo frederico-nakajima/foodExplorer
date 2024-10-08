@@ -4,434 +4,261 @@ import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     padding-bottom:500px;
+     padding-top:500px;
     width:428px;
     margin:0 auto;
               
-
-             
-                  
-
-              
-                                    
-                                    
-                                
-
-        >main{
-            display: flex;
-            flex-direction: column;
-            width:428px;
-             align-items:center;
+    >a{
+     width: 364px;
+     display:flex;
+     align-items:center;
+     color: ${({theme}) => theme.COLORS.WHITE};;
+     font-family: Poppins;
+     font-size: 16.546px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 140%; /* 23.164px */
+     padding-bottom:150px;
+     >svg{
+         width: 8px;
+         height: 15px;
+     }
+     
     
-            .imagem-salada-categoria{
-                    
-                width: 364px;
-                height: 300px;
-                display: flex;
-                flex-direction: column;
-                
-                
-                .UploadSimple{
-                    display:flex;
-                    flex-direction:column;
-                    width:270px;
-                    
-                
-                    
-                        >div{
-                          border:1px solid ${({theme}) => theme.COLORS.WHITE};
-                          
-                            width: 364px;
-                            padding-left:25px;
-                            padding-top:3px;
-                            border-radius: 5px;
-                            background-color:${({theme}) => theme.COLORS.BACKGROUND_800};   
-                            >input{
-                                border-radius: 5px;
-                                height: 48px;
-                                border:0;
-                                background-color:${({theme}) => theme.COLORS.BACKGROUND_800};
-                                outline:none;
-                                  border:1px solid ${({theme}) => theme.COLORS.WHITE};
-                                &::placeholder {
-                                    color:${({theme}) => theme.COLORS.GRAY_300};
-                                    font-family: "Roboto", serif;
-                                    font-size: 16px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                
-                                    text-align:center;
-                                    }
-                            }
-                                
-                                
-                }
-                        
-            }
-            
-        
-    
-       
-        
-                    
-                    
-        .inputs{
-            
-            width: 364px;
-            height: 541px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            
-            gap: 32px;
-            
-            .nome{
-               width: 364px;
-                
-            }
-            
-            .dados{
-                display: flex;
-                flex-direction:column;
-                
-                align-items: flex-start;
-                >label{
-                    
-                margin-top:-8px;
-            }
-            
-            
-            
-            
-                    
-        }
-                    
-                    
-                    
-                select{
-                    border-radius: 4px;
-                    width: 364px;
-                    height: 48px;
-                    background-color:${({theme}) => theme.COLORS.BACKGROUND_800};
-                    appearance: none;
-                    -webkit-appearance: none;
-
-                    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
-
-                    background-repeat:no-repeat;
-                    background-position: right 24px top 50%;
-                    color: #C1BCCC;
-                    font-family: Poppins;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px; /* 162.5% */
-                    padding:0 24px;
-                    border:0;
-                    margin-top:4px; 
-                }
-                    
-            }
-        }
-
-        .section{
-            width: 364px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-bottom:15px;
-          
-            
-            .preco{
-                display: flex;
-                flex-direction:column;
-               
-                align-items: flex-start;
-               >label{
-                margin-bottom:10px;
-                margin-top:-10px;
-               }
-            }
-            
-            
-
-        }
-
-      
-        
-            label{
-                color:${({theme}) => theme.COLORS.GRAY_200};
-                font-family: Roboto;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 100%; /* 16px */
-                margin-bottom:8px;
-            }
-
-               
-        
-        
-        .buttons{
-            display: flex;
-            justify-content: flex-end;
-            align-items:center;
-            margin-top:13px;
-            
-            >button{
-               width: 364px;
-                height: 48px;
-                padding-right:15px;
-                padding-left:15px;
-                border-radius: 5px;
-                color:${({theme}) => theme.COLORS.WHITE} ;
-                background-color: ${({ theme }) => theme.COLORS.RED_200};
-                border:0;
-                text-align: center;
-                font-family: Poppins;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 24px; /* 171.429% */
-               
-                
-
-           }
-           
-        }
-        
-        
-
-        .tags{
-            display: flex;
-            align-items: center;
-            height: 51px;
-            gap: 15px;
-            width: 265px;
-            background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
-            padding: 0px 0px 0px 0px;
-            border-radius: 8px;
-           
-            margin-bottom:20px;
-        
-        }
-
-        
-        }
-    }
-
-
-
-
-
-
-
-
-     @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
-          width: 100%;
-    height: 100vh;
-
-    display: grid;
-    grid-template-rows: 94px 85px auto 94px;
-    grid-template-areas:
-    "header"
-    "link"
-    "content"
-    "footer";
-    
-   
-   
-   
+    }           
 
     >main{
-        grid-area: content;
-        display:flex;
-        width: 1145px;
-        overflow-y: auto;
-        padding-right: 0px;
-        margin: 0 auto;
-       
-        
-       .imagem-salada-categoria{
-        display:flex;
-       
-            .UploadSimple{
+        display: flex;
+        flex-direction: column;
+        width:428px;
+         align-items:center;
+
+        .imagem-salada-categoria{
                 
+            width: 364px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            
+            
+            .UploadSimple{
                 display:flex;
                 flex-direction:column;
                 width:270px;
-                margin-right:32px;
-                
-                    >div{
-                        display: flex;
-                        align-items: center;
-                       justify-content:center;
-                        width:100%;
-                        padding-left:25px;
-                        padding-top:3px;
+             
+
+                >div{
+                  border:1px solid ${({theme}) => theme.COLORS.WHITE};
+                    display:flex;
+                    align-items:center;
+                    width: 364px;
+                    padding-left:25px;
+                   
+                    border-radius: 5px;
+                    background-color:${({theme}) => theme.COLORS.BACKGROUND_800};   
+                    >input{
                         border-radius: 5px;
-                        background-color:${({theme}) => theme.COLORS.BACKGROUND_800};   
-                        >input{
-                            border-radius: 5px;
-                            height: 48px;
-                            border:0;
-                            background-color:${({theme}) => theme.COLORS.BACKGROUND_800};
-                            outline:none;
-                            
-                            &::placeholder {
-                                color:${({theme}) => theme.COLORS.GRAY_300};
-                                font-family: "Roboto", serif;
-                                font-size: 16px;
-                                font-style: normal;
-                                font-weight: 400;
-                               
-                                text-align:center;
-                                }
-                        }
-                            
-                            
-            }
-                    
+                        height: 48px;
+                        border:0;
+                        margin-left:5px;
+                        background-color:${({theme}) => theme.COLORS.BACKGROUND_800};
+                        outline:none;
+                         
+                        &::placeholder {
+                            color:${({theme}) => theme.COLORS.GRAY_300};
+                            font-family: "Roboto", serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            margin-left:5px;
+                            text-align:left;
+                            }
+                    }
+                        
+                        
         }
-                    
-                    
-        .inputs{
+                
+    }
+    
+              
+    .inputs{
+        
+        width: 364px;
+        height: 541px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:32px;
+        
+        
+        .nome{
+           width: 364px;
+            
+        }
+        
+        .dados{
             display: flex;
-            align-items: center;
+            flex-direction:column;
+            align-items: flex-start;
             
-            gap: 32px;
-            margin: 0px 0px 32px 2px;
-            position:relative;
-            
-            .nome{
-                width:475px;
-                
-            }
-            
-            
-            
-            .dados{
-                display: flex;
-                flex-direction:column;
-                
-                align-items: flex-start;
-                >label{
-                    
+            >label{
                 margin-top:-8px;
-            }
-                    
+                
         }
-                    
-                    
-                    
-                select{
-                    border-radius: 4px;
-                    width: 325px;
-                    height: 48px;
-                    background-color:${({theme}) => theme.COLORS.BACKGROUND_800};
-                    appearance: none;
-                    -webkit-appearance: none;
-                    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
-                    background-repeat:no-repeat;
-                    background-position: right 24px top 50%;
-                    color: #C1BCCC;
-                    font-family: Poppins;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 26px; /* 162.5% */
-                    padding:0 24px;
-                    border:0;
-                    margin-top:4px; 
-                }
-                    
-            }
-        }
+        
+        
+        
+        
+                
+    }
+                                    
+    select{
+        border-radius: 4px;
+        width: 364px;
+        height: 48px;
+        background-color:${({theme}) => theme.COLORS.BACKGROUND_800};
+        appearance: none;
+        -webkit-appearance: none;
 
-        .section{
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+
+        background-repeat:no-repeat;
+        background-position: right 24px top 50%;
+        color: #C1BCCC;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+        padding:0 24px;
+        border:0;
+        margin-top:4px; 
+    }
+        
+}
+}
+                                    
+                                
+    .section{
+        width: 364px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom:15px;
+    
+        
+        .preco{
             display: flex;
-            align-items: center; 
-            justify-content: space-between;
-            margin-bottom:32px;
-            border:0;
-            
-
-            .preco{
-                display: flex;
-                flex-direction:column;
-               
-                align-items: flex-start;
-               >label{
-                margin-bottom:5px;
-                margin-top:-10px;
-               }
-            }
+            flex-direction:column;
+            align-items: flex-start;
+        >label{
+            margin-bottom:5px;
+           
         }
+        }
+        
+    }
+        
+        
+
+
+    label{
+        color:${({theme}) => theme.COLORS.GRAY_200};
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 16px */
+        margin-bottom:8px;
+    }
+
+    
+
+
+    .buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin-top:13px;
+
+    >button{
+    width: 364px;
+        height: 48px;
+        padding-right:15px;
+        padding-left:15px;
+        border-radius: 5px;
+        color:${({theme}) => theme.COLORS.WHITE} ;
+        background-color: ${({ theme }) => theme.COLORS.RED_200};
+        border:0;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 171.429% */
+    
+        
+
+    }
+
+    }
+
+
+
+    .tags{
+    display: flex;
+    align-items: center;
+    height: 51px;
+    gap: 15px;
+    width: 265px;
+    background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+    padding: 0px 0px 0px 0px;
+    border-radius: 8px;
+
+    margin-bottom:20px;
+
+    }
+
+
+    }
+    }
+                    
+    @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {            
+                    
+        
+    >Link{
+    
+    font-size:30px;
+    
+    }
+       
+        
+                    
+                    
+                    
+                    
+                    
+
 
       
         
-            label{
-                color:${({theme}) => theme.COLORS.GRAY_200};
-                font-family: Roboto;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 100%; /* 16px */
-                margin-bottom:8px;
-            }
 
-               
-        
-        
-        .buttons{
-            display: flex;
-            justify-content: flex-end;
-            align-items:center;
-            margin-top:13px;
-            
-            >button{
-                width: 175.5px;
-                height: 48px;
-                padding-right:15px;
-                padding-left:15px;
-                border-radius: 5px;
-                color:${({theme}) => theme.COLORS.WHITE} ;
-                background-color: ${({ theme }) => theme.COLORS.RED_200};
-                border:0;
-                text-align: center;
-                font-family: Poppins;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 24px; /* 171.429% */
-               
-                
 
-           }
-           
-        }
-        
-        
 
-        .tags{
-            display: flex;
-            align-items: center;
-            height: 51px;
-            gap: 24px;
-            width:885px;
-            background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
-            padding: 0px 600px 0px 16px;
-            border-radius: 8px;
-            margin-top:8px;
-            margin-bottom:20px;
-        
-        }
 
-        
-        }
- 
+
     }
+
+
+    
+  
+
+ 
+    
+   
+ 
 `;    
             
 
@@ -446,72 +273,21 @@ export const Container = styled.div`
            
             
 
-export const CaretLeftLink = styled.a`
-    position:relative;
-    margin:0px auto 120px auto ;
-    display: flex;
+
+   
+   
+
     
-    gap:2px;
-    width: 364px;
-   
-   
-    >img{
-        width:20px;
-        height:20px;
-        margin-bottom:40px;
-    }
-    >a{
-        position:absolute;
-        top:0px;
-        left:30px;
-        
-        display: flex;
-        align-items: center;
-        color: ${({ theme }) => theme.COLORS.WHITE};
-        font-family:"Poppins",serif;
-        font-size: 16.5px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 140%; /* 33.6px */
 
-        
-     }
-
-       @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
-        position:relative;
-        margin:40px auto 24px auto ;
-        display: flex;
-        align-items: center;
-        gap:5px;
-        width: 1137px;
-   
-   
-
-    >a{
-        position:absolute;
-        top:0px;
-        left:30px;
-        
-        display: flex;
-        align-items: center;
-        color: ${({ theme }) => theme.COLORS.WHITE};
-        font-family:"Poppins",serif;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 140%; /* 33.6px */
-        }
-}
-`;
 
 
 export const Form = styled.form`
-       
-   width: 364px;
+    width: 364px;
     height: 541px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+       
     
    
    
@@ -539,10 +315,10 @@ export const Form = styled.form`
             margin-bottom:24px;
             
         }
-   
+    }
             
        
-    }
+    
 
     @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
    
@@ -563,7 +339,7 @@ export const Form = styled.form`
         flex-direction: row;
         align-items:center;
        
-        gap:10px;
+       gap: 34px;
 
     >div.UploadSimple{
         width:200px;
@@ -592,7 +368,7 @@ export const Form = styled.form`
 
         div.dados{
             justify-content: flex-end;
-             border:1px solid ${({ theme }) => theme.COLORS.WHITE};
+             
              height:75px;
              select{
                  border:1px solid ${({ theme }) => theme.COLORS.WHITE};
@@ -606,15 +382,29 @@ export const Form = styled.form`
     
    div.section{
     width: 1137px;
-     display: flex;
+    display: flex;
     flex-direction: row;
     justify-content:space-between;
 
+
+    div.ingredientes-preco{
+    display: flex;
+    flex-direction: column;
     >Section{
         div.tags{
             border:1px solid ${({ theme }) => theme.COLORS.WHITE};
             width: 909px;
+
+            >NoteItem{
+                width: 265px;
+            }
         }
+    }
+    }
+    div.preco{
+        height:77px;
+        justify-content:center;
+       
     }
 
     }   
@@ -622,7 +412,7 @@ export const Form = styled.form`
  
      div.buttons{
            button{
-            width: 263px;
+            width: 165px;
            }
         
         }

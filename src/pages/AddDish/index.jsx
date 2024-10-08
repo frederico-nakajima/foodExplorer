@@ -75,10 +75,10 @@ export function AddDish(){
                         </Section>
     
     
-                            <div className='preco'>
-                                <label htmlFor="preco">Preço</label>
-                                <Input placeholder="R$ 00,00" id="preco"/>
-                            </div>
+                        <div className='preco'>
+                            <label htmlFor="preco">Preço</label>
+                            <Input placeholder="R$ 00,00" id="preco"/>
+                        </div>
                     </div>
 
                 
@@ -94,7 +94,7 @@ export function AddDish(){
                 </Form>
             </main>
             
-         
+            <Footer/>
            
         </Container>
     )

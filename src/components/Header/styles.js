@@ -5,11 +5,10 @@ export const Container = styled.header`
     grid-area: header;
     padding:24px auto;
     height: 94px;
-    width: 1250px;
+    width: 1918px;
     display: flex;
     justify-content:center;
     align-items: center;
-    border:1px solid ;
     
     background-color:${({theme}) => theme.COLORS.BACKGROUND_600};
   
@@ -75,7 +74,7 @@ export const Search  = styled.div`
    
     
     height: 48px;
-    width: 230vw;
+    width: 610px;
     border-radius: 5px;
     padding: 12px;
     color:${({theme}) => theme.COLORS.WHITE};
@@ -85,7 +84,7 @@ export const Search  = styled.div`
    margin-right: 8px;
     }
      > input {
-    width: 13vw;
+    width: 40vw;
     height: 100%;
     border: none;
     background: none;

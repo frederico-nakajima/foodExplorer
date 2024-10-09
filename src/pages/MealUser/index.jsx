@@ -1,5 +1,5 @@
 import { Container, TopLink, AlinhamentoCountButton } from './styles';
-import { HeaderIcon } from '../../components/HeaderIcon';
+import { DesktopHeaderIcon } from '../../components/DesktopHeaderIcon';
 import { Tag } from '../../components/Tag'; 
 import Dish from '../../assets/Dish.png';
 import Plus from '../../assets/Plus.svg';
@@ -13,7 +13,7 @@ import CaretLeft from '../../assets/CaretLeft.svg';
 export function MealUser() {
     return (
         <Container>
-            <HeaderIcon />
+            <DesktopHeaderIcon />
 
             <TopLink>
                 <img src={CaretLeft} alt="imagem de uma seta apontando para esquerda" />

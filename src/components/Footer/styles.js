@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 
 export const Container = styled.footer`
-  margin-top:200px;
+ 
   height: 77px;
   width: 428px;
   display: flex;
@@ -31,13 +31,14 @@ export const Container = styled.footer`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
     height: 77px;
-    width: 1250px;
-    margin-top: 103px;
+     width: 100%;
+   
     >main{
     display: flex;
     align-items: center;
+    
     gap:715px;
-   
+    
     p{
       color:${({theme}) => theme.COLORS.WHITE_200} ;
       font-size: 14px;
@@ -78,7 +79,7 @@ export const Brand = styled.div`
 
 
   @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
-
+  
   >img{
   width: 30px;
   height: 30px;

@@ -17,7 +17,7 @@ export const Container = styled.button`
     border-radius: 5px;
 
     
-    color:${({theme}) => theme.COLORS.WHITE};
+   
     text-align: center;
     font-family: Poppins;
     font-size: 14px;

@@ -2,10 +2,10 @@ import { Container,Brand,Search } from './styles';
 import polygonImageHeader from '../../assets/Polygon-header.png';
 import busca from '../../assets/busca.svg';
 import SignOut from '../../assets/SignOut.svg'
-import { ButtonIcon } from '../../components/ButtonIcon'
+import { ButtonIcon } from '../ButtonIcon'
 import Receipt from '../../assets/Receipt.svg'
 
-export function HeaderIcon(){
+export function DesktopHeaderIcon(){
     return(
         <Container>
            
@@ -19,14 +19,17 @@ export function HeaderIcon(){
                 </Brand>
 
                 <Search>
-                    <img src={busca} alt="ícone de busca" /> {/* Ícone de busca */}
+                    <img src={busca} alt="ícone de busca" /> 
                     <input placeholder="Busque por pratos ou ingredientes" />
                 </Search>
                
                 
-                <div className="buttonIcon">
-                    <ButtonIcon icon={Receipt}  title="Pedidos (0)"/>
-                </div>
+                
+                <ButtonIcon icon={Receipt}>
+                    Pedidos (0)
+                </ButtonIcon>
+
+                
                
                     
                 <img src={SignOut} alt="ícone de sair do app" />
@@ -34,7 +37,7 @@ export function HeaderIcon(){
                
                   
                 
-              
+          
 
            
                 
@@ -43,4 +46,4 @@ export function HeaderIcon(){
 }
                 
                 
-            
+

@@ -9,9 +9,9 @@ export const Container = styled.header`
     display: flex;
     justify-content:center;
     align-items: center;
-    // border:1px solid ${({ theme }) => theme.COLORS.WHITE};
-    
+    border:1px solid ${({ theme }) => theme.COLORS.WHITE};
     background-color:${({theme}) => theme.COLORS.BACKGROUND_600};
+   
   
     
 
@@ -22,10 +22,7 @@ export const Container = styled.header`
     gap:32px;
     width:1122px;
    
-   .buttonIcon{
-    display:flex;
-    justify-content:center;
-   }
+
 
   }
 
@@ -71,24 +68,24 @@ export const Brand = styled.div`
 `;
 
 export const Search  = styled.div`
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    grid-area: search;
-   
-    
-    height: 48px;
-    width: 620px;
-    border-radius: 5px;
-    padding: 12px;
-    color:${({theme}) => theme.COLORS.WHITE};
-    background-color:${({theme}) => theme.COLORS.BACKGROUND_900};
-    
-    > img {
-   margin-right: 8px;
-    }
-     > input {
-    width: 13vw;
+  grid-area: search;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid ${({ theme }) => theme.COLORS.WHITE};
+  
+  height: 48px;
+  width: 610px;
+  border-radius: 5px;
+  padding: 12px;
+  color:${({theme}) => theme.COLORS.WHITE};
+  background-color:${({theme}) => theme.COLORS.BACKGROUND_900};
+  
+  > img {
+  margin-right: 8px;
+  }
+  > input {
+    width: 40vw;
     height: 100%;
     border: none;
     background: none;
@@ -101,19 +98,19 @@ export const Search  = styled.div`
     font-weight: 400;
     line-height: 100%; /* 16px */
     
-    &::placeholder {
-      color: ${({ theme }) => theme.COLORS.GRAY_300};
-      font-family: "Roboto", serif;
-      font-size: 16px;
-      font-weight: 400;
-      text-align:center;
-    }
-    
-    
+  &::placeholder {
+    color: ${({ theme }) => theme.COLORS.GRAY_300};
+    font-family: "Roboto", serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align:center;
+  }
+  
+  
 
-    &:focus {
-      outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
   }
 `;
 

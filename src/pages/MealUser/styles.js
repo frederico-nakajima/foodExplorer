@@ -1,6 +1,29 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+media()
     width: 100%;
     height: 100vh;
 
@@ -15,7 +38,7 @@ export const Container = styled.div`
     > main {
         grid-area: content;
         margin-top: 40px;
-        
+        height:615px; 
         > div {
             display: flex;
             align-items: center;

@@ -1,5 +1,5 @@
 import { Container,Banner,Content } from './styles';
-import { HeaderIcon } from '../../components/HeaderIcon';
+import { DesktopHeaderIcon } from '../../components/DesktopHeaderIcon';
 import { Footer } from '../../components/Footer';
 import Pngegg from '../../assets/pngegg.png';
 import { Card } from '../../components/Card';
@@ -7,7 +7,7 @@ import { Card } from '../../components/Card';
 export function MenuUser() {
     return (
         <Container>
-            <HeaderIcon />
+            <DesktopHeaderIcon />
             <div className="underHeader">
                 <Banner>
                     <div className="imgBanner">

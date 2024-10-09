@@ -11,7 +11,7 @@ export const Container = styled.button`
     background-color:${({theme}) => theme.COLORS.RED_300} ;
     color:${({theme}) => theme.COLORS.WHITE} ;
     border: 0;
-    padding:12px 32px;
+    padding:12px 35px;
     border-radius: 5px;
     color:${({theme}) => theme.COLORS.WHITE};
     text-align: center;
@@ -19,7 +19,20 @@ export const Container = styled.button`
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; 
+    line-height: 24px;
+
+    >button{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    background:transparent;
+    border:none;   
+    color:${({theme}) => theme.COLORS.WHITE};
+
+    } 
 
 `;
   

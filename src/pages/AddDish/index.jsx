@@ -1,6 +1,6 @@
 import { Container,Form } from './styles';
 import { Header } from '../../components/Header';
-import { BrandHeader } from '../../components/BrandHeader'
+import { MobileHeader } from '../../components/MobileHeader'
 import { Textarea } from '../../components/Textarea'
 import { Input } from '../../components/Input'
 import { NoteItem } from '../../components/NoteItem'
@@ -14,8 +14,8 @@ import CaretLeft from '../../assets/CaretLeft.svg';
 export function AddDish(){
     return(
         <Container>
-           <div className="header-mobile">
-                <BrandHeader />
+            <div className="header-mobile">
+                <MobileHeader />
             </div>
             <div className="header-desktop">
                 <Header />

@@ -1,26 +1,32 @@
-import { Container,Form,TopLink } from './styles';
+import { Container,Form } from './styles';
 import { Header } from '../../components/Header';
+import { MobileHeader } from '../../components/MobileHeader'
 import { Textarea } from '../../components/Textarea'
 import { Input } from '../../components/Input'
 import { NoteItem } from '../../components/NoteItem'
 import { Section } from '../../components/Section'
 import UploadSimple from '../../assets/UploadSimple.svg';
 import {Link} from 'react-router-dom'
-import { Footer } from '../../components/Footer';
+
+import { Footer } from '../../components/Footer'
 import CaretLeft from '../../assets/CaretLeft.svg';
+
 
 export function EditDish(){
     return(
         <Container>
-            <Header/>
+           <div className="header-mobile">
+                <MobileHeader />
+            </div>
+            <div className="header-desktop">
+                <Header />
+            </div>
 
 
-            <TopLink>
-                    <img src={CaretLeft} alt="imagem de uma seta apontando para esquerda" />
-                    <Link to="/">
-                        Voltar
-                    </Link>
-            </TopLink>
+            <Link to="/">
+                <img src={CaretLeft} alt="imagem de uma seta apontando para esquerda" />
+                Voltar
+            </Link>
                         
 
             <main>
@@ -64,19 +70,19 @@ export function EditDish(){
 
 
                     <div className="section">
-    
-                        <Section title="Ingredientes">
-                            <div className='tags'>
-                                <NoteItem  placeholder="Pão Naan"/>
-                                <NoteItem isnew placeholder="Adicionar"/>
-                            </div>
-                        </Section>
-    
-    
-                            <div className='preco'>
-                                <label htmlFor="preco">Preço</label>
-                                <Input placeholder="R$ 00,00" id="preco"/>
-                            </div>
+                        <div className="ingredientes-preco">
+                            <label htmlFor="preco">Ingredientes</label>
+                            <Section>
+                                <div className='tags'>
+                                    <NoteItem  placeholder="Pão Naan"/>
+                                    <NoteItem isnew placeholder="Adicionar"/>
+                                </div>
+                            </Section>
+                        </div>
+                        <div className='preco'>
+                            <label htmlFor="preco">Preço</label>
+                            <Input placeholder="R$ 00,00" id="preco"/>
+                        </div>
                     </div>
 
                 
@@ -87,8 +93,8 @@ export function EditDish(){
                     </div>
                         
                     <div className="buttons">
-                        <button>Excluir prato</button>
-                        <button>Salvar alterações</button>
+                        <button className='excluir'>Excluir prato</button>
+                        <button className='salvar'>Salvar alterações</button>
                     </div>
                 </Form>
             </main>

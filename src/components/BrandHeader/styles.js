@@ -7,12 +7,12 @@ export const Container = styled.div`
     justify-content:center;
     align-items:center;
     gap:10px;
-   width:428px;
+    width:424px;
     heigth:114px;
     padding:30px 10px 15px 10px;
     border:1px solid ${({theme}) => theme.COLORS.WHITE};
     background-color:${({theme}) => theme.COLORS.BACKGROUND_700};
-    margin-left:-70px;
+    margin-left:-5px;
     margin-bottom:10px;
 
      >.list{

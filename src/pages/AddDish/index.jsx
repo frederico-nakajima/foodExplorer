@@ -14,8 +14,12 @@ import CaretLeft from '../../assets/CaretLeft.svg';
 export function AddDish(){
     return(
         <Container>
-           
-
+           <div className="header-mobile">
+                <BrandHeader />
+            </div>
+            <div className="header-desktop">
+                <Header />
+            </div>
             <Link to="/">
                 <img src={CaretLeft} alt="imagem de uma seta apontando para esquerda" />
                 Voltar

@@ -5,11 +5,11 @@ export const Container = styled.header`
     grid-area: header;
     padding:24px auto;
     height: 94px;
-    width: 100%;
+    width: 1250px;
     display: flex;
     justify-content:center;
     align-items: center;
-    
+    border:1px solid ;
     
     background-color:${({theme}) => theme.COLORS.BACKGROUND_600};
   

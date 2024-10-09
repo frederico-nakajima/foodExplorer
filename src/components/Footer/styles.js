@@ -31,102 +31,101 @@ export const Container = styled.footer`
 
   @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
     height: 77px;
-    width: 1250px;;
-    margin-top:115px;
+    width: 1250px;
+    margin-top: 103px;
     >main{
     display: flex;
-   
     align-items: center;
     gap:715px;
+   
     p{
       color:${({theme}) => theme.COLORS.WHITE_200} ;
       font-size: 14px;
-      
-     
-      
-    
     }
     
   }
-   
-    
-    
   }   
 `;
-   
-   
-    
-   
-  
-    
-
-
-
       
-   
-
-
 
 export const Brand = styled.div`
   display:flex;
   align-items:center;
-  
-  
+
+
 
   >img{
-    width: 22px;
-    height: 18px;
+  width: 22px;
+  height: 18px;
   }
   >div{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    
-    h2{
-    font-family: "Roboto", serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width:150px;
-    color:${({theme}) => theme.COLORS.GRAY_700};
-    }
-      
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  
+  h2{
+  font-family: "Roboto", serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width:150px;
+  color:${({theme}) => theme.COLORS.GRAY_700};
   }
-  
-  
-  
+    
+  }
+
+
+
   @media (min-width: ${DEVICE_BREAKPOINTS.LG}) {
-   
-  
-    
+
   >img{
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
   }
   >div{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    
-    h2{
-   
-    font-size: 24px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
   
-    
-    }
-      
+  h2{
+
+  font-size: 24px;
   }
+    
+  }
+  }        
+
+`;
+     
+      
+    
+   
+    
+    
+   
+  
+    
+    
+    
   
    
     
     
-  }        
-   
      
     
  
   
   
   
-  `;
+    
+   
+  
+    
+
+
+
+      
+   
+
+

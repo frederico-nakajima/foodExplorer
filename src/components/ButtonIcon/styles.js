@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 export const Container = styled.button`
     display:flex;
+    justify-content:center;
     align-items:center;
     gap:3px;
     width: 100%;
@@ -11,28 +12,14 @@ export const Container = styled.button`
     background-color:${({theme}) => theme.COLORS.RED_300} ;
     color:${({theme}) => theme.COLORS.WHITE} ;
     border: 0;
-    padding:12px 35px;
+    padding:12px;
     border-radius: 5px;
     color:${({theme}) => theme.COLORS.WHITE};
-    text-align: center;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
+    
 
-    >button{
-    text-align: center;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 171.429% */
-    background:transparent;
-    border:none;   
-    color:${({theme}) => theme.COLORS.WHITE};
-
-    } 
+   
+  
+ 
 
 `;
   

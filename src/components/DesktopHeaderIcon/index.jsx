@@ -14,7 +14,7 @@ export function DesktopHeaderIcon(){
                     <img src={polygonImageHeader} alt="imagem de um polígono" />
                     <div>
                         <h2>food explorer</h2>
-                        <p>admin</p>
+                        
                     </div>
                 </Brand>
 

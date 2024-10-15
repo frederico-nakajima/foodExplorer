@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
     grid-area: header;
-    padding:24px auto;
+    padding:24px 5px;
     height: 94px;
     width: 100%;
     display: flex;
@@ -20,8 +20,9 @@ export const Container = styled.header`
     justify-content:center;
     align-items: center;
     gap:32px;
-    width:1122px;
+      width:1134px;
    
+ 
 
 
   }
@@ -73,11 +74,11 @@ export const Search  = styled.div`
   align-items:center;
   justify-content:center;
   border:1px solid ${({ theme }) => theme.COLORS.WHITE};
-  
+  width:700px;
   height: 48px;
-  width: 610px;
+ 
   border-radius: 5px;
-  padding: 12px;
+  padding: 12px 200px;
   color:${({theme}) => theme.COLORS.WHITE};
   background-color:${({theme}) => theme.COLORS.BACKGROUND_900};
   
@@ -85,12 +86,12 @@ export const Search  = styled.div`
   margin-right: 8px;
   }
   > input {
-    width: 40vw;
+    
     height: 100%;
     border: none;
     background: none;
     color: ${({ theme }) => theme.COLORS.WHITE};
-    padding: 0;
+  
     
     font-family: Roboto;
     font-size: 16px;

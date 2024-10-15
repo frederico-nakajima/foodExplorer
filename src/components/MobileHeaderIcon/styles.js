@@ -15,9 +15,9 @@ export const Container = styled.div`
     margin-left:-5px;
     margin-bottom:10px;
 
-     >img.list{
+     >.list{
         margin-right:60px;
-        margin-left:-40px;
+       
      }
 
     >img{
@@ -27,7 +27,7 @@ export const Container = styled.div`
     >div{
         display:flex;
         align-items:center;
-        gap:10px;
+       
         
        h2{
         font-family: "Roboto", serif;
@@ -35,20 +35,27 @@ export const Container = styled.div`
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        
+        margin-right:60px;
         }
-        
-
-
-       p{
-        color:${({theme}) => theme.COLORS.CIANO};
-        font-family: "Roboto",serif;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%; /* 19.2px */
-
-       }
+        div.positionZero{
+        position:relative;
+        width: 38px;
+        height: 38px;
+        }
+        >div.smallZero{
+        position:absolute;
+        top:25px;
+        right:25px;
+        background-color:${({theme}) => theme.COLORS.RED_300};
+        display: flex;
+        width: 20px;
+        height: 20px;
+        padding: 10px 10px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 99px;
+        }
+       
 
     }
 `;

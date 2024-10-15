@@ -1,47 +1,78 @@
-import { Container,TopLink } from './styles';
-import { Header } from '../../components/Header';
-import { Tag } from '../../components/Tag' 
-import Dish from '../../assets/Dish.png'
+import { Container,  AlinhamentoCountButton,HomeLink } from './styles';
+import Dish from '../../assets/Dish.png';
 
-import { Button } from '../../components/Button'
-import { Footer } from '../../components/Footer';
-import {Link} from 'react-router-dom'
 
 import CaretLeft from '../../assets/CaretLeft.svg';
 
-export function Meal(){
-    return(
+import { Tag } from '../../components/Tag'; 
+import { Button } from '../../components/Button';
+import { Footer } from '../../components/Footer';
+
+import { Header } from '../../components/Header';
+import { MobileHeader } from '../../components/MobileHeader'
+
+
+
+export function Meal() {
+    return (
         <Container>
-            <Header/>
+            <div className="header-mobile">
+                <MobileHeader />
+            </div>
+            <div className="header-desktop">
+                <Header />
+            </div>
 
-
-            <TopLink>
-                    <img src={CaretLeft} alt="imagem de uma seta apontando para esquerda" />
-                    <Link to="/">
-                        Voltar
-                    </Link>
-            </TopLink>
-                        
+           
+            <HomeLink to="/">
+                <img src={CaretLeft} alt="imagem de uma seta apontando para esquerda"  />
+                <p>Voltar</p>
+            </HomeLink>
+           
 
             <main>
-            <div>
-                <img src={Dish} alt="imagem de um prato de comida de um restaurante" />
-                
-                   <div className='dish'>
+            
+                <img className='pratoComida' src={Dish} alt="imagem de um prato de comida de um restaurante" />
+
+                <div className='dish'>
+                    <div className="salada-ingredientes">
                         <h1>Salada Ravanello</h1>
-                        <p>Rabanetes, folhas verdes e molho agridoce salpicados <br /> com gergelim. O pão naan dá um toque especial.</p>
-                        <div>
-                            <Tag title="alface"/><Tag title="cebola"/><Tag title="pão naan"/><Tag title="pepino"/><Tag title="rabanete"/><Tag title="tomate"/>
+                        <p>
+                            Rabanetes, folhas verdes e molho agridoce salpicados
+                            com gergelim. O pão naan dá um toque especial.
+                        </p>
+                    </div>
+
+                    <div className='tags'>
+                        <Tag title="alface" />
+                        <Tag title="cebola" />
+                        <Tag title="pão naan" />
+                        <Tag title="pepino" />
+                        <Tag title="rabanete" />
+                        <Tag title="tomate" />
+                    </div>
+
+                    <AlinhamentoCountButton>
+                       
+                        <div className='button'>
+                            <Button title="Editar prato"/>
                         </div>
-                        <div className='Button'><Button title="Editar prato" /></div>
-                   </div>
-            </div>
+                    </AlinhamentoCountButton>
+                </div>
+                              
+                            
+
+                
             </main>
-
-            <Footer/>
+            <Footer />
         </Container>
-    )
+    );
 }
+                                
 
+
+
+            
+                              
 
 

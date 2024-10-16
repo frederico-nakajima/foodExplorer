@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 
 export const CardWrapper = styled.div`
-    width:304px;
+    width:306px;
     height:462px;
     padding:24px;
     position:relative;

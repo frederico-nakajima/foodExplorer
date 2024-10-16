@@ -1,41 +1,47 @@
+
 import React from 'react';
-import { Container} from './styles';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper'; 
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import luke from '../../assets/luke.jpg';
+import ravi from '../../assets/ravi.jpg';
+import samuel from '../../assets/samuel.jpg';
+import wolfgang from '../../assets/wolfgang.jpg';
+import {Container} from './styles'
+import { Card } from '../../components/Card';
 
 
-const SimpleSlider = () => {
+export function SimpleSlider(){
   return (
 
    <Container>
     <div style={{ width: '80%', margin: '0 auto' }}>
       <Swiper
-        spaceBetween={30}
-        slidesPerView={1}
+        spaceBetween={20}
+        slidesPerView={3}
         pagination={{ clickable: true }}
         navigation
         loop={true}
         modules={[Navigation, Pagination]}
       >
         <SwiperSlide>
-          Slide 1
+         <Card />
         </SwiperSlide>
         <SwiperSlide>
-          Slide 2
+        <Card/>
         </SwiperSlide>
         <SwiperSlide>
-          Slide 3
+        <Card/>
         </SwiperSlide>
         <SwiperSlide>
-          Slide 4
+        <Card />
         </SwiperSlide>
       </Swiper>
     </div>
-    </Container>  
+    </Container>
   );
 };
 
-export default SimpleSlider;
+export default SimpleSlider

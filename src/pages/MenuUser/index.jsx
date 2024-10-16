@@ -1,6 +1,7 @@
 import { Container,Banner,Content } from './styles';
 import { DesktopHeaderIcon } from '../../components/DesktopHeaderIcon';
 import { Footer } from '../../components/Footer';
+import { SimpleSlider } from '../../components/SimpleSlider';
 import Pngegg from '../../assets/pngegg.png';
 import { Card } from '../../components/Card';
 
@@ -22,12 +23,11 @@ export function MenuUser() {
             
             <Content>
 
-            <Card/>
+          
 
-
-
-
-
+            <SimpleSlider/>
+            <SimpleSlider/>
+            <SimpleSlider/>
 
 
 

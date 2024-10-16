@@ -4,27 +4,18 @@ export const Container = styled.div`
     width: 100%;
     height: 100vh;
 
-    display: grid;
-    grid-template-rows: 94px 460px auto 94px;
-    grid-template-areas:
-    "header"
-    "banner"
-    "content"
-    "footer";
 
-    >.underHeader{
-         width: 100%;
-        
-        display:flex;
-        justify-content:center;
-    }
+
+  
   
     
 `;
 
 export const Banner  = styled.div`
-    grid-area: banner;
-    margin-top: 32px;
+   
+   
+  
+    margin:32px auto;
     width:1120px;
     height:406px;
     border:1px solid ${({ theme }) => theme.COLORS.WHITE};
@@ -74,17 +65,9 @@ export const Banner  = styled.div`
 `;
 
 export const Content  = styled.div`         
-    grid-area:content;
-    
-
-    
-
-`;
-
-export const Carrossel  = styled.div`         
-
-
-
-    
+  
+ margin:0 auto;
+    width:1400px;
 
 `;
+

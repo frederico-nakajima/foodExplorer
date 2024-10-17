@@ -5,26 +5,44 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import luke from '../../assets/luke.jpg';
-import ravi from '../../assets/ravi.jpg';
-import samuel from '../../assets/samuel.jpg';
-import wolfgang from '../../assets/wolfgang.jpg';
+import { useState, useEffect } from "react";
 import {Container} from './styles'
 import { Card } from '../../components/Card';
 
 
 export function SimpleSlider(){
+  const [slidesPerView, setSlidesPerViewt] = useState(1);
+
+  useEffect(() => {
+    function handleResize(){
+      if(window.innerWidth < 4){
+        setSlidesPerViewt(1);
+      }else{
+        setSlidesPerViewt(3);
+      }
+    }
+    handleResize();
+
+    window.addEventListener("resize",handleResize)
+
+    return() =>{
+      window.removeEventListener("resize",handleResize)
+    }
+  },[])
+
   return (
 
    <Container>
-    <div style={{ width: '80%', margin: '0 auto' }}>
+   
+    <div >
+      <h1 className='title'>Refeições</h1>
       <Swiper
-        spaceBetween={20}
-        slidesPerView={3}
-        pagination={{ clickable: true }}
-        navigation
+        spaceBetween={0}
+        slidesPerView={2}
+        // pagination={{ clickable: true }}
+        // navigation
         loop={true}
-        modules={[Navigation, Pagination]}
+        // modules={[Navigation, Pagination]}
       >
         <SwiperSlide>
          <Card />

@@ -36,22 +36,16 @@ export const Container = styled.div`
 `;
 
 export const Banner  = styled.div`
-
-    margin:15px auto;
-    width: 376px;
-    height: 120px;
-   
- 
+margin:15px auto;
+width: 376px;
+height: 120px;
     >.imgBanner img{
     width: 191px;
     height: 149px;
-
-    
     border:1px solid ${({ theme }) => theme.COLORS.WHITE};
     }
-    
-    
-    >.textBox{
+
+    >div.textBox{
         display:flex;
         flex-direction:column;
         align-items:flex-start;
@@ -66,8 +60,7 @@ export const Banner  = styled.div`
         border-radius: 8px;
         background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
         border:1px solid ${({ theme }) => theme.COLORS.WHITE};
-    }
-        
+
         h1{
             font-family: Poppins;
             font-size: 18px;
@@ -77,18 +70,26 @@ export const Banner  = styled.div`
             
         }
         div.paragrafo-banner{
-       display:flex;
-       flex-direction:column;
-       width:188px;
-        p{
+        display:flex;
+        flex-direction:column;
+        width:188px;
+            p{
             font-family: Roboto;
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
             line-height: 100%; /* 16px */
-        }    
+            }    
         }
-     }  
+    }
+   
+ 
+
+    
+    
+    
+        
+     
    
     //DESKTOP Banner
     @media (min-width: ${DEVICE_BREAKPOINTS.LG}) { 
@@ -100,43 +101,46 @@ export const Banner  = styled.div`
     >.imgBanner img{
     width:632px;
     height:406px;
-   
-    
     border:1px solid ${({ theme }) => theme.COLORS.WHITE};
     }
+   
     
     
-    >.textBox{
-        display:flex;
-        flex-direction:column;
-        align-items:flex-start;
-        justify-content:center;
-        width:1120px;
-        height:260px;
-        align-items:flex-end;
-        padding-right:70px;
-        position:absolute;
-        z-index:-1;
-        top: 272px;
-        border-radius: 8px;
-        background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
+    
+    >div.textBox{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    width:1120px;
+    height:260px;
+    align-items:flex-end;
+    padding-right:70px;
+    position:absolute;
+    z-index:-1;
+    top: 272px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
        
-        
-        h1{
+        >h1{
             font-family: Poppins;
             font-size: 40px;
             font-style: normal;
             font-weight: 500;
             line-height: 140%; /* 56px */
         }
-        p{
-            font-family: Roboto;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 100%; /* 16px */
-        }
-     }       
+        >div.paragrafo-banner{
+        display:flex;
+        flex-direction:row;
+        width:419px;
+            p{
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%; /* 16px */
+            }
+        }       
    
 
     }
@@ -145,7 +149,8 @@ export const Banner  = styled.div`
 export const Content  = styled.div`         
   
  
-   
-
+   @media (min-width: ${DEVICE_BREAKPOINTS.LG}) { 
+    
+    }
 `;
 

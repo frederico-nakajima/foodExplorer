@@ -11,14 +11,28 @@ import { Card } from '../../components/Card';
 
 
 export function SimpleSlider(){
-  const [slidesPerView, setSlidesPerViewt] = useState(1);
-
+  const [slidesPerView, setSlidesPerView] = useState(1);
+  const [spaceBetween, setSpaceBetween] = useState(0);
+  const [navigation, setNavigation] = useState(false);
+  
   useEffect(() => {
     function handleResize(){
-      if(window.innerWidth < 4){
-        setSlidesPerViewt(1);
-      }else{
-        setSlidesPerViewt(3);
+    const width = window.innerWidth;
+      if (width < 425) {
+        // Configurações para mobile (telas menores que 425px)
+        setSlidesPerView(1);
+        setSpaceBetween(0);
+        setNavigation(false);
+      } else if (width >= 425 && width < 1368) {
+        // Configurações para tablets e telas intermediárias
+        setSlidesPerView(2);
+        setSpaceBetween(10);
+        setNavigation(false);
+      } else {
+        // Configurações para desktop (telas maiores que 1368px)
+        setSlidesPerView(3);
+        setSpaceBetween(30);
+        setNavigation(true);
       }
     }
     handleResize();
@@ -34,15 +48,15 @@ export function SimpleSlider(){
 
    <Container>
    
-    <div >
+    <div className='swiper' >
       <h1 className='title'>Refeições</h1>
       <Swiper
-        spaceBetween={0}
-        slidesPerView={2}
+        spaceBetween={spaceBetween}
+        slidesPerView={slidesPerView}
         // pagination={{ clickable: true }}
-        // navigation
+        navigation={navigation}
         loop={true}
-        // modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination]}
       >
         <SwiperSlide>
          <Card />

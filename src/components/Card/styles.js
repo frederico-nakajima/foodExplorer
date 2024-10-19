@@ -78,7 +78,7 @@ export const CardWrapper = styled.div`
     height:462px;
     padding:24px;
     position:relative;
-    
+    margin-bottom:45px;
     border:1px solid ${({ theme }) => theme.COLORS.WHITE};
     
         .favoritar{
@@ -155,10 +155,10 @@ export const CardWrapper = styled.div`
 export const AlinhamentoCountButton = styled.div`
     display: flex;
     flex-direction:column;
-  
-  
     gap:10px;
     width:100%;
+  
+  
     
     
     margin-top:10px;
@@ -189,13 +189,14 @@ export const AlinhamentoCountButton = styled.div`
     //AlinhamentoCountButton desktop
    @media (min-width: ${DEVICE_BREAKPOINTS.LG}){
    display: flex;
-   justify-content:space-between;
-   align-items: center;
-   gap:10px;
-   width:304px;
-   padding-right:80px;
-   padding-left:20px;
-   margin-top:10px;
+   flex-direction:row;
+    padding-left:24px;
+    width:304px;
+    margin-top:10px;
+    
+  
+  
+  
    .count {
        display: flex;
        align-items: center;

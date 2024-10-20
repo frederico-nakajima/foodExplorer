@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 
 export const Container = styled.div`
+div.wrapper{
     width: 100%;
     max-width:428px;
     height: 100vh;
@@ -13,9 +14,10 @@ export const Container = styled.div`
         .header-desktop {
              display: none; 
         }  
-
+    }
 
      // DESKTOP Container
+    div.wrapper{ 
     @media (min-width: ${DEVICE_BREAKPOINTS.LG}) { 
     width: 100%;
     max-width:1368px;
@@ -31,7 +33,7 @@ export const Container = styled.div`
         gap:10px;
 
         }  
-  
+    }
     }
 `;
 
@@ -39,6 +41,7 @@ export const Banner  = styled.div`
 margin:15px auto;
 width: 376px;
 height: 120px;
+position:relative;
     >.imgBanner img{
     width: 191px;
     height: 149px;
@@ -56,7 +59,7 @@ height: 120px;
         padding-right:0px;
         position:absolute;
         z-index:-1;
-        top: 137px;
+        top: 30px;
         border-radius: 8px;
         background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
         border:1px solid ${({ theme }) => theme.COLORS.WHITE};
@@ -118,7 +121,7 @@ height: 120px;
     padding-right:70px;
     position:absolute;
     z-index:-1;
-    top: 272px;
+    top: 146px;
     border-radius: 8px;
     background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
        

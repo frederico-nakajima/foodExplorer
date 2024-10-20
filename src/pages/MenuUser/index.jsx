@@ -3,19 +3,27 @@ import { DesktopHeaderIcon } from '../../components/DesktopHeaderIcon';
 import { MobileHeaderIcon } from '../../components/MobileHeaderIcon'
 import { Footer } from '../../components/Footer';
 import { SimpleSlider } from '../../components/SimpleSlider';
+import { SideMenu } from '../../components/SideMenu';
 import Pngegg from '../../assets/pngegg.png';
+import { useState } from 'react';
+
 
 
 export function MenuUser() {
+    const[menuIsOpen,setMenuIsOpen] = useState(false);
     return (
         <Container>
-            <div className="header-mobile">
-                <MobileHeaderIcon />
-            </div>
-            <div className="header-desktop">
-                <DesktopHeaderIcon />
-            </div>
-            
+            <SideMenu
+            menuIsOpen={menuIsOpen}
+            onCloseMenu={() => setMenuIsOpen(false)}/>
+            <div className="wrapper">
+                <div className="header-mobile">
+                    <MobileHeaderIcon onOpenMenu={() => setMenuIsOpen(true)}/>
+                </div>
+                <div className="header-desktop">
+                    <DesktopHeaderIcon />
+                </div>
+                
                 <Banner>
                     <div className="imgBanner">
                         <img src={Pngegg} alt="imagem de biscoitos e frutinhas" />
@@ -27,23 +35,22 @@ export function MenuUser() {
                         </div>
                     </div>
                 </Banner>
-           
-            
-            <Content>
-
-          
-
-            <SimpleSlider/>
-            <SimpleSlider/>
-            <SimpleSlider/>
-
-
-
-
-
-
-            </Content>
-            <Footer />
+                
+                <Content>
+                    <SimpleSlider/>
+                    <SimpleSlider/>
+                    <SimpleSlider/>
+                </Content>
+                <Footer />
+            </div>
         </Container>
     );
 } 
+
+
+          
+
+
+
+
+

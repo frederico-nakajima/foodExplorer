@@ -41,19 +41,19 @@ export const Container = styled.div`
         position:relative;
         width: 38px;
         height: 38px;
-        }
         >div.smallZero{
-        position:absolute;
-        top:25px;
-        right:25px;
-        background-color:${({theme}) => theme.COLORS.RED_300};
-        display: flex;
-        width: 20px;
-        height: 20px;
-        padding: 10px 10px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 99px;
+            position:absolute;
+            top:25px;
+            right:25px;
+            background-color:${({theme}) => theme.COLORS.RED_300};
+            display: flex;
+            width: 20px;
+            height: 20px;
+            padding: 10px 10px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 99px;
+            }
         }
        
 

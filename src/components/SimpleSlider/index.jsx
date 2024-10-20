@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -31,7 +30,7 @@ export function SimpleSlider(){
       } else {
         // Configurações para desktop (telas maiores que 1368px)
         setSlidesPerView(3);
-        setSpaceBetween(30);
+        setSpaceBetween(10);
         setNavigation(true);
       }
     }

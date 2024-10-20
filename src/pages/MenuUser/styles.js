@@ -19,10 +19,10 @@ div.wrapper{
      // DESKTOP Container
     div.wrapper{ 
     @media (min-width: ${DEVICE_BREAKPOINTS.LG}) { 
-    width: 100%;
-    max-width:1368px;
+    max-width:100%;
     height: 100vh;
     margin:0 auto;
+    
     
         .header-mobile {
             display: none; 
@@ -87,13 +87,6 @@ position:relative;
     }
    
  
-
-    
-    
-    
-        
-     
-   
     //DESKTOP Banner
     @media (min-width: ${DEVICE_BREAKPOINTS.LG}) { 
     margin:32px auto;
@@ -156,4 +149,11 @@ export const Content  = styled.div`
     
     }
 `;
+
+    
+    
+    
+        
+     
+   
 

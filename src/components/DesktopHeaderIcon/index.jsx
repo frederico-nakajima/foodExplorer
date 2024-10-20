@@ -23,17 +23,20 @@ export function DesktopHeaderIcon(){
                     <input placeholder="Busque por pratos ou ingredientes" />
                 </Search>
                
-                
-                
                 <ButtonIcon icon={Receipt}>
                     Pedidos (0)
                 </ButtonIcon>
 
+                <img src={SignOut} alt="ícone de sair do app" />
+           </main>
+                
+        </Container>
+    )
+}
+                
                 
                
                     
-                <img src={SignOut} alt="ícone de sair do app" />
-           </main>
                
                   
                 
@@ -41,9 +44,6 @@ export function DesktopHeaderIcon(){
 
            
                 
-        </Container>
-    )
-}
                 
                 
 

@@ -4,8 +4,7 @@ import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 export const Container = styled.div`
 
 max-width: 428px;
-margin-bottom: 46px;
-margin-top: 46px;
+
 margin:46px 10px;
 
     >div.swiper{

@@ -3,12 +3,13 @@ import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 
 export const Container = styled.div`
 div.wrapper{
-    
+    width: 100%;
     max-width:428px;
     height: 100vh;
     margin:0 auto;
         .header-mobile {
-            display: flex; 
+            display: flex;
+            height: 100px; 
         }
 
         .header-desktop {

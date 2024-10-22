@@ -1,6 +1,6 @@
 import { Container,Banner,Content } from './styles';
 import { DesktopHeaderIcon } from '../../components/DesktopHeaderIcon';
-import { MobileHeaderIcon } from '../../components/MobileHeaderIcon'
+import { MobileHeader } from '../../components/MobileHeader'
 import { Footer } from '../../components/Footer';
 import { SimpleSlider } from '../../components/SimpleSlider';
 import { SideMenu } from '../../components/SideMenu';
@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 
 
-export function MenuUser() {
+export function MenuAdmin() {
     const[menuIsOpen,setMenuIsOpen] = useState(false);
     return (
         <Container>
@@ -17,11 +17,11 @@ export function MenuUser() {
             menuIsOpen={menuIsOpen}
             onCloseMenu={() => setMenuIsOpen(false)}
             navText="Sair"                   
-            aboveNavText=""         
-            aboveNavLink="#"/>
+            aboveNavText="Novo prato"         
+            aboveNavLink="/novo-prato"/>
             <div className="wrapper">
                 <div className="header-mobile">
-                    <MobileHeaderIcon onOpenMenu={() => setMenuIsOpen(true)}/>
+                    <MobileHeader onOpenMenu={() => setMenuIsOpen(true)}/>
                 </div>
                 <div className="header-desktop">
                     <DesktopHeaderIcon />

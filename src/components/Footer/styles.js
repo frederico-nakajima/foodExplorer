@@ -10,7 +10,7 @@ export const Container = styled.footer`
   align-items: center;
   border:1px solid ${({theme}) => theme.COLORS.WHITE_200} ;
   background-color:${({theme}) => theme.COLORS.BACKGROUND_600};
-
+  
   >main{
     display: flex;
     justify-content:center;

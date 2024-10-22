@@ -15,7 +15,7 @@ export const Container = styled.div`
     margin-left:-5px;
     margin-bottom:10px;
 
-     >.list{
+     >img.list{
         margin-right:60px;
        
      }
